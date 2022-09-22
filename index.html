@@ -9,6 +9,7 @@
       iframe { border: 0px; width: 900px; height: 600px; }
       img { height: 256px; padding-right: 0px;}
       figure { font-size:0; }
+      span { border-style: solid; border-width: 1px; }
     </style>
     <script type="text/javascript"
     src="https://www.maths.nottingham.ac.uk/plp/pmadw/LaTeXMathML.js">
@@ -17,13 +18,10 @@
   <body>
     <main class="container">
       <h1>Programmierung von visuellen und interaktiven Medien</h1>
-
       <h6>Einführung in grundlegende Konzepte der Programmierung mit p5.js</h6>
-
       <figure>
         <img src="img/p5js.svg" alt="p5.js logo"/>
       </figure>
-
       <p>
         <q><b>p5.js</b> is a <b>JavaScript</b> library for <b>creative coding</b>, with a focus on making coding accessible and inclusive for artists, designers, educators, beginners,
            and anyone else! p5.js is free and open-source because we believe software, and the tools to learn it, should be accessible to everyone.
@@ -31,48 +29,38 @@
         However, you’re not limited to your drawing canvas. You can think of your whole browser page as your sketch, 
         including HTML5 objects for text, input, video, webcam, and sound.</q> (<a href="https://p5js.org">p5.js</a>)
       </p>
-
       <figure>
         <img src="img/Unofficial_JavaScript_logo.png" alt="JS logo"/>
       </figure>
-
       <p>
         <q><b>JavaScript</b> is the world's most popular programming language, [...] the programming language of the Web, [and] easy to learn.</q> (<a href="https://www.w3schools.com/js/">W3Schools</a>)
       </p>
-
       <p>
         <q><b>Creative coding</b> is a type of computer programming in which the goal is to create something expressive instead of something functional.</q> (<a href="https://en.wikipedia.org/wiki/Creative_coding">Wikipedia</a>)
       </p>
 
       <h2>Code Editor</h2>
 
-      <!-- Code, Canvas, Console, Play Button -->
-
       <a href="https://editor.p5js.org/" role="button" target="_blank">Code Editor öffnen</a>
 
       <h2>Funktionen</h2>
-
       <p>
         <q>A function is a <b>set of statements</b> that perform a task.
           Optionally, functions can have <b>parameters.</b></q> (<a href="https://p5js.org/reference/#/p5/function">p5.js</a>)
       </p>
     
-      <h3>Mathematik</h3>
-
+      <h3>Funktionen in der Mathematik</h3>
       <blockquote>
         $\displaystyle{ f(x) = x^2 }$
       </blockquote>
 
-      <h3>JavaScript</h3>
-
+      <h3>Funktionen in JavaScript</h3>
       <iframe src="https://editor.p5js.org/jnttzck/sketches/cdGqUDZIp/"></iframe>
 
-      <h3>p5.js</h3>
-
+      <h3>Funktionen in p5.js</h3>
       <iframe src="https://p5js.org/reference/"></iframe>
 
       <h2>Übung: Konstruktivismus</h2>
-
       <p><q>Der Konstruktivismus ist eine streng gegenstandslose Stilrichtung der Moderne in der ersten Hälfte des 20. Jahrhunderts. [...] 
         Charakteristisch ist ein <b>einfaches geometrisches Formenvokabular</b>, 
         wie auf dem berühmten Bild Schwarzes Quadrat auf weißem Grund von Kasimir Malewitsch.</q> (<a href="https://de.wikipedia.org/wiki/Konstruktivismus_(Kunst)">Wikipedia</a>)</p>
@@ -83,24 +71,58 @@
         <img src="img/895px-Kazimir_malevich_suprematist_composition.jpg">
       </figure>
 
-      <img src="img/Kazimir_Malevich,_1915,_Black_Suprematic_Square,_oil_on_linen_canvas,_79.5_x_79.5_cm,_Tretyakov_Gallery,_Moscow.jpg">
-
-
-      <img src="img/Suprematism_with_Blue_Triangle_and_Black_Square.jpg">
-
+      <h3>Kasimir Malewitsch - Das Schwarze Quadrat</h3>
+      <img src="img/Kazimir_Malevich,_1915,_Black_Suprematic_Square,_oil_on_linen_canvas,_79.5_x_79.5_cm,_Tretyakov_Gallery,_Moscow.jpg" style="margin-bottom:1cm;">
       <details>
-        <summary>Welche Funktionen brauchen wir?</summary>
+        <summary>Tipp - Funktionen</summary>
         <ul>
-          <li><a href="https://p5js.org/reference/#/p5/square">square()</a></li>
-          <li><a href="https://p5js.org/reference/#/p5/fill">fill()</a></li>
           <li><a href="https://p5js.org/reference/#/p5/createCanvas">createCanvas()</a></li>
           <li><a href="https://p5js.org/reference/#/p5/background">background()</a></li>
+          <li><a href="https://p5js.org/reference/#/p5/square">square()</a></li>
+          <li><a href="https://p5js.org/reference/#/p5/fill">fill()</a></li>
         </ul>
       </details>
 
       <details>
-        <summary>Code:</summary>
+        <summary>Tipp - Farben</summary>
+        <p>Farben können über ihren in Anführungszeichen gesetzten Farbnamen referenziert werden.</p>
+        <ul>
+          <li><code>'beige'</code> - <span style="background-color: beige;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span></li>
+          <li><code>'black'</code> - <span style="background-color: black;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Tipp - Koordinaten</summary>
+        <iframe style="width:400px; height:442px;", src="https://editor.p5js.org/jnttzck/full/CYRxvJN9o"></iframe>
+      </details>
+
+      <details>
+        <summary>Lösung</summary>
         <iframe src="https://editor.p5js.org/jnttzck/sketches/OoLbLVDjx"></iframe>
+      </details>
+
+      <h3>Suprematismus (Schwarzes Rechteck, blaues Dreieck)</h3>
+      <img src="img/Suprematism_with_Blue_Triangle_and_Black_Square.jpg" style="margin-bottom:1cm;">
+
+      <details>
+        <summary>Tipp - Farben</summary>
+        <p>Farben können auch im Hexadezimalsystem angegeben werden.</p>
+        <ul>
+          <li><code>'#F0F1E4'</code> - <span style="background-color: #F0F1E4;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span></li>
+          <li><code>'#131814'</code> - <span style="background-color: #131814;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span></li>
+          <li><code>'#244A9B'</code> - <span style="background-color: #244A9B;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Tipp - Koordinaten</summary>
+        <iframe style="width:700px; height:602px;", src="https://editor.p5js.org/jnttzck/full/DPIDhZP1Ut"></iframe>
+      </details>
+
+      <details>
+        <summary>Lösung</summary>
+        <iframe src="https://editor.p5js.org/jnttzck/sketches/BRm95UIO8"></iframe>
       </details>
 
       <h2>Variablen</h2>
@@ -109,7 +131,10 @@
         like a number we might use in a sum, 
         or a string that we might use as part of a sentence.</q> (<a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Variables">MDN</a>)</p>
 
+      <h3>Variablen in JavaScript</h3>
       <iframe src="https://editor.p5js.org/jnttzck/sketches/3pptD9eF9"></iframe>
+
+      <h3>Variablen in p5.js</h3>
       <iframe src="https://editor.p5js.org/jnttzck/sketches/RD_C8eEOT"></iframe>
 
       <h2>Bedingte Anweisung</h2>
@@ -128,33 +153,51 @@
         <img src="img/rozin_wooden_1999-small.jpg">
       </figure>
 
-      <iframe src="https://editor.p5js.org/jnttzck/full/IC7eMac3k"></iframe>
+      <iframe src="https://editor.p5js.org/jnttzck/full/IC7eMac3k" style="margin-bottom:1cm;"></iframe>
 
       <details>
-        <summary>Code:</summary>
+        <summary>Tipp - Variablen</summary>
+        <ul>
+          <li><a href="https://p5js.org/reference/#/p5/createCanvas">mouseIsPressed</a></li>
+          <li><a href="https://p5js.org/reference/#/p5/mouseX">mouseX</a></li>
+          <li><a href="https://p5js.org/reference/#/p5/mouseY">mouseY</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Tipp - Struktur</summary>
+        <ul>
+          <li><a href="https://p5js.org/reference/#/p5/setup">setup()</a></li>
+          <li><a href="https://p5js.org/reference/#/p5/draw">draw()</a></li>
+          <li><a href="https://p5js.org/reference/#/p5/if-else">if-else</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Lösung</summary>
         <iframe src="https://editor.p5js.org/jnttzck/sketches/IC7eMac3k"></iframe>
       </details>
 
       <h2>Schleifen</h2>
 
-      <p><q>Loops are handy, if you want to run the same code over and over again, 
-        each time with a different value.</q>(<a href="https://www.w3schools.com/js/js_loop_for.asp">W3Schools</a>)</p>
+      <p><q>Loops are handy, if you want to <b>run the same code over and over again</b>, 
+        each time with a different value.</q> (<a href="https://www.w3schools.com/js/js_loop_for.asp">W3Schools</a>)</p>
 
-      <h3>Mathematik</h3>
+      <h3>Sigma-Schreibweise in der Mathematik</h3>
 
       <blockquote>
         $\displaystyle{ 1 + 2 + 3 + 4 + 5 = \sum_{i = 1}^{5}i }$
       </blockquote>
 
-      <h3>JavaScript</h3>
+      <h3>Schleifen in JavaScript</h3>
 
       <iframe src="https://editor.p5js.org/jnttzck/sketches/v4yCdHNaO"></iframe>
 
       <h2>Übung: Op-Art</h2>
 
       <p><q>Die Op-Art oder optische Kunst ist eine Stilrichtung der bildenden Kunst der 1960er Jahre, 
-        die mit Hilfe präziser abstrakter Formmuster und geometrischer Farbfiguren beim Betrachter überraschende oder irritierende optische Effekte, 
-        die Vorstellung von Bewegung, Flimmereffekte und optische Täuschungen erzeugt.</q> (<a href="https://de.wikipedia.org/wiki/Op-Art">Wikipedia</a>)</p>
+        die mit Hilfe präziser abstrakter <b>Formmuster</b> und geometrischer Farbfiguren beim Betrachter überraschende oder irritierende optische Effekte, 
+        die Vorstellung von Bewegung, Flimmereffekte und <b>optische Täuschungen</b> erzeugt.</q> (<a href="https://de.wikipedia.org/wiki/Op-Art">Wikipedia</a>)</p>
 
       <figure>
         <img src="img/Victor_Vasarely_Kezdi-Ga_1970_Screenprint_in_colors_20×20in_Edition_of_250.jpg">
