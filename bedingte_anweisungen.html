@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <title>Programmierung von visuellen und interaktiven Medien</title>
+    <style>
+      img { height: 256px; padding-right: 0px;}
+      figure { font-size:0; }
+      span { border-style: solid; border-width: 1px; }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <h2>Bedingte Anweisungen</h2>
+
+      <p>Die if...else-Anweisung führt eine Anweisung aus, wenn eine angegebene Bedingung wahr ist. 
+        Wenn die Bedingung falsch ist, wird eine andere Anweisung in der optionalen else-Klausel ausgeführt.
+        (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else">MDN</a>)</p>
+
+        <h3>Übung 1</h3>
+        <iframe src="https://editor.p5js.org/jnttzck/full/ft07Ydymb" style="margin-bottom:1cm;border: 0px; width: 400px; height: 440px;"></iframe>
+        <details>
+          <summary>Tipp - if...else</summary>
+          Füge diese if...else-Anweisung in die <code>draw()</code>-Funktion ein:
+          <code>
+            if (/*Maus ist im Kreis*/) { <br>
+              &emsp;// fülle den Kreis mit Schwarz  <br>
+            } else { <br>
+              &emsp;// fülle den Kreis mit Weiß <br>
+            }<br>
+          </code><br><br>
+
+          Die Kommentare bei <code>/*...*/</code> und <code>// ...</code> musst du mit Code ersetzen.
+        </details>
+        <details>
+          <summary>Tipp - Bedingung</summary>
+          Seien die Variablen <code>x</code> und <code>y</code> die Entfernung der Maus zum Mittelpunkt und die Variable <code>r</code> der Radius des Kreises.
+          So ist die Maus im Kreis genau dann, wenn <code>x * x + y * y < r * r</code> gilt (Satz des Pythagoras).
+        </details>
+  
+        <details>
+          <summary>Weiteres</summary>
+          <ul>
+            <li><a href="https://editor.p5js.org/jnttzck/sketches/ft07Ydymb">Lösung</a></li>
+          </ul>
+        </details>  
+
+      <a href="index.html">&larr; zum Anfang</a> |
+      <a href="schleifen.html">nächstes Kapitel &rarr;</a>
+    </main>
+  </body>
+</html>
